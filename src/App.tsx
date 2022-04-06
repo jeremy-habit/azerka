@@ -8,11 +8,11 @@ import {
 
 function App() {
   return (
-    <Router>
+    <Router basename={`/${process.env.PUBLIC_URL}`}>
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="">Home</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -32,7 +32,7 @@ function App() {
           of them to render at a time
         */}
         <Routes>
-          <Route path="/" element={<Home />}/>
+          <Route path="" element={<Home />}/>
           <Route path="/about" element={<About />}/>
           <Route path="/dashboard" element={<Dashboard />}/>
         </Routes>
