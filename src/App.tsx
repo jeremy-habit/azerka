@@ -3,26 +3,28 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
+  HashRouter,
 } from "react-router-dom";
 
 function App() {
   return (
-    <Router basename={`/${process.env.PUBLIC_URL}`}>
-      <div>
-        <ul>
-          <li>
-            <Link to="">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
-        </ul>
+      <HashRouter basename=''>
+        <div>
+          <ul>
+            <li>
+              <Link to="">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/dashboard">Dashboard</Link>
+            </li>
+          </ul>
 
-        <hr/>
+          <hr/>
+        </div>
 
         {/*
           A <Switch> looks through all its children <Route>
@@ -36,8 +38,7 @@ function App() {
           <Route path="/about" element={<About />}/>
           <Route path="/dashboard" element={<Dashboard />}/>
         </Routes>
-      </div>
-    </Router>
+      </HashRouter>
   );
 }
 
