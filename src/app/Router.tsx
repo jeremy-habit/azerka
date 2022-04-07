@@ -1,9 +1,9 @@
 import React, { ReactElement } from "react";
 import { Routes, Route, HashRouter } from "react-router-dom";
-import About from "../pages/About";
-import Home from "../pages/Home";
-import App from "./App";
-import { url } from "../config/url";
+import { url } from "@/config/url";
+import App from "@/app/App";
+import Home from "@pages/Home";
+import About from "@pages/About";
 
 function Router(): ReactElement {
   return (
