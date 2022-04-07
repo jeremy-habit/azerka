@@ -1,4 +1,4 @@
-export const url =  {
- home: "",
- about: "about"
-}
+export const url = {
+  home: "",
+  about: "about",
+};

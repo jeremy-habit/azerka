@@ -1,11 +1,8 @@
-import React from 'react';
-import {
-  Link
-} from "react-router-dom";
-import { url } from '../config/url';
+import React, { ReactElement } from "react";
+import { Link } from "react-router-dom";
+import { url } from "../config/url";
 
-function App() {
-  
+function App(): ReactElement {
   return (
     <div>
       <ul>
@@ -16,9 +13,9 @@ function App() {
           <Link to={url.about}>About</Link>
         </li>
       </ul>
-      <hr/>
+      <hr />
     </div>
-  )
+  );
 }
 
 export default App;
