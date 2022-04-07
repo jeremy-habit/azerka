@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import { Routes, Route, HashRouter } from "react-router-dom";
-import { url } from "@/config/url";
-import App from "@/app/App";
+import { url } from "@config/url";
+import App from "@app/App";
 import Home from "@pages/Home";
 import About from "@pages/About";
 

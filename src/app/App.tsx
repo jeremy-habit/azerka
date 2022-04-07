@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import { Link } from "react-router-dom";
-import { url } from "../config/url";
+import { url } from "@config/url";
 
 function App(): ReactElement {
   return (

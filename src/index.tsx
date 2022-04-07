@@ -1,8 +1,9 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
-import reportWebVitals from "./reportWebVitals";
-import Router from "./app/Router";
+import "@styles/base.css";
+import "@config/i18n";
+import reportWebVitals from "@config/reportWebVitals";
+import Router from "@app/Router";
 
 const rootElement = document.getElementById("root");
 if (!rootElement) throw new Error("Failed to find the root element");
