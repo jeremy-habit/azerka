@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "@styles/base.css";
-import "@config/i18n";
+import "@config/i18n/i18n";
 import reportWebVitals from "@config/reportWebVitals";
 import Router from "@app/Router";
 

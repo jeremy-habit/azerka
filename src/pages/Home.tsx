@@ -6,7 +6,7 @@ export default function Home(): ReactElement {
 
   return (
     <div>
-      <h2>{t("Welcome to React")}</h2>
+      <h2>{t("welcome")}</h2>
     </div>
   );
 }
